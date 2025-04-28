@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    background-color: black;
+}
+
 .main {
     background-image: url(assets/bg.jpg);
     background-position: center center;
@@ -24,7 +28,7 @@
 }
 
 nav {
-    max-width: 60vw;
+    max-width: 80vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -46,7 +50,7 @@ nav button {
 .title {
     font-family: "poppins";
     color: white;
-    height: 100%;
+    height: calc(100% - 62px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,14 +58,66 @@ nav button {
     position: relative;
     text-align: center;
     gap: 23px;
+    padding: 0 30px;
 }
 
-.title :first-child {
+.title> :nth-child(1) {
     font-size: 48px;
     font-weight: 900;
 }
 
-.title :nth-child(2) {
+.title> :nth-child(2) {
     font-size: 17px;
     font-weight: 700;
+}
+
+.title> :nth-child(3) {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(66, 65, 65);
+}
+
+.btn {
+    padding: 5px 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-red {
+    background-color: red;
+    color: #ffffff;
+    padding: 13px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main input {
+    padding: 15px 100px 15px 5px;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: #ffffff;
+}
+
+.title-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
