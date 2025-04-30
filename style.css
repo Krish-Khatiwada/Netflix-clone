@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "poppins";
 }
 
 body {
@@ -48,7 +49,6 @@ nav button {
 }
 
 .title {
-    font-family: "poppins";
     color: white;
     height: calc(100% - 62px);
     display: flex;
@@ -72,7 +72,7 @@ nav button {
 }
 
 .title> :nth-child(3) {
-    font-size: 13px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -95,6 +95,7 @@ nav button {
     background-color: red;
     color: #ffffff;
     border: none;
+    margin-left: 10px;
 }
 
 .btn-red {
@@ -106,8 +107,8 @@ nav button {
     border: none;
 }
 
-.main input {
-    padding: 15px 100px 15px 5px;
+.main input, .button-email input {
+    padding: 15px 200px 15px 5px;
     font-size: 15px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -120,4 +121,113 @@ nav button {
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img video {
+    position: absolute;
+    width: 30vw;
+    top: 50px;
+    right: 0px;
+}
+
+.first > div :first-child {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.first > div :nth-child(2) {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.faq h2{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin: 25px;
+}
+
+.faq .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding: 20px 15px;
+    width: 70vw;
+    margin: 10px auto;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+} 
+
+.faq .box:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+footer {
+    width: 70vw;
+    margin: auto;
+    padding: 34px;
+}
+
+footer .question {
+    padding: 34px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .btn-2 {
+    margin-top: 34px;
+}
+
+footer a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.button-email {
+    padding: 34px;
+}
+
+.button-email div {
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.title-btns input {
+    padding: 15px 400px 15px 5px;
 }
